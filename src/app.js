@@ -12,7 +12,7 @@ app.get("/", (req, res)=>{
 })
 
 
-mongoose.connect("mongodb+srv://sandipan:sandipan22@cluster0.psojri2.mongodb.net/auth_tool_db?retryWrites=true&w=majority").then((res)=>{
+mongoose.connect("mongodb+srv://###########################/auth_tool_db?retryWrites=true&w=majority").then((res)=>{
     console.log("Successfully connected the mongodb")
 },
 (err)=> console.log("Failed to connect the mongoDB")
