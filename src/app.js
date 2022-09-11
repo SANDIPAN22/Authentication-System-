@@ -12,18 +12,10 @@ app.get("/", (req, res)=>{
 })
 
 
-mongoose.connect("mongodb+srv://###########################/auth_tool_db?retryWrites=true&w=majority").then((res)=>{
+mongoose.connect("mongodb+srv://@cluster0.psojri2.mongodb.net/auth_tool_db?retryWrites=true&w=majority").then((res)=>{
     console.log("Successfully connected the mongodb")
 },
 (err)=> console.log("Failed to connect the mongoDB")
 )
 
-
-app.listen(PORT, (err,res)=>{
-    if(err){
-        console.log("Sorry due to some error unable to start the NOde server")
-    }
-    else{
-        console.log("Node backend server is up and running")
-    }
-})
+module.exports = app
